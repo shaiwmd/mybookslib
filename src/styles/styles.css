@@ -1,0 +1,80 @@
+/* Styles */
+body {
+  background-color: #efefef;
+}
+#app {
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #4d4d4d;
+  min-width: 200px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+.jumbotron {
+  margin: 30px auto;
+  padding: 30px 10px;
+  background-color: #ddd;
+  box-shadow: 2px 2px 7px #aaa;
+}
+a.active {
+  color: orange;
+}
+
+nav {
+  padding-top: 20px;
+}
+table img {
+  width: 60%;
+  min-width: 40px;
+}
+table img:hover {
+  box-shadow: 2px 2px 7px #333;
+}
+table .book-title {
+  text-transform: capitalize;
+}
+table .delete-icon {
+    border-radius: 50%;
+    background-color: red;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 0 auto;
+    cursor: pointer;
+}
+form {
+  margin: 0 auto;
+}
+form input[type="submit"] {
+  margin-right: 1.5em;
+}
+@media screen and (max-width: 500px) {
+  .book-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  table.table tr {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #999;
+    padding: 5%;
+  }
+  .table thead {
+    display: none;
+  }
+  table.table tr td {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+  }
+}
